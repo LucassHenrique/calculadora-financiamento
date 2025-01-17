@@ -84,6 +84,7 @@ body {
 .tabelaDeJuros li {
     border: 1px solid black;
     padding: 3px;
+    list-style: none;
 }
 
 .formulario {

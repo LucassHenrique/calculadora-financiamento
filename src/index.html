@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ContasFeitas</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="titleField">
+          <h1>Simulação de financiamento.</h1>
+          <h2>Veja todas as taxas de juros clicando no link abaixo.</h2>
+          <p>
+            Lembrando que isso é apenas uma simulação, não remete ao valor real
+            das parcelas ou ao valor total.
+          </p>
+          <a
+            href="https://www.bcb.gov.br/estatisticas/reporttxjuros?codigoSegmento=1&codigoModalidade=401101"
+            target="_blank"
+            >Clique aqui</a
+          >
+          <p class="opc">Ou confira na tabela a baixo</p>
+        </div>
+        <div class="valoresETaxas">
+          <div class="formulario">
+            <label for="total">Valor Total do Bem (R$):</label>
+            <input type="number" id="total" placeholder="Ex: 20000" />
+
+            <label for="entrada">Valor da Entrada (R$):</label>
+            <input type="number" id="entrada" placeholder="Ex: 5000" />
+
+            <label for="juros">Taxa de Juros Anual (%):</label>
+            <input type="number" id="juros" placeholder="Ex: 36.04" />
+
+            <label for="parcelas">Número de Parcelas:</label>
+            <select id="parcelas">
+              <option value="12">12 parcelas</option>
+              <option value="24">24 parcelas</option>
+              <option value="36">36 parcelas</option>
+              <option value="48">48 parcelas</option>
+            </select>
+
+            <button onclick="calcular()">Calcular Parcela</button>
+            <div class="result">
+              <p id="resultado"></p>
+              <p class="total"></p>
+            </div>
+          </div>
+
+          <div>
+            <p class="escolha">Escolha um banco</p>
+            <ul class="tabelaDeJuros">
+              <!-- conteudo é adicionado via js -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #34495e;
+    font-family: sans-serif;
+}
+
+.titleField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.titleField h1 {
+    font-weight: bolder;
+    
+}
+
+.titleField h2 {
+    font-size: 16px;
+    
+}
+
+.titleField p {
+    font-size: 10px;
+    color: gray;
+    
+}
+
+.titleField a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.titleField .opc {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ecf0f1;
+  border-radius: 10px;
+  width: 90%;
+  
+
+ 
+}
+
+.valoresETaxas {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabelaDeJuros {
+    overflow-x: auto;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: #70707010;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.tabelaDeJuros li {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  margin: auto;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid gray 1px;
+    font-size: 12px;
+}
+
+.formulario select {
+    border-radius: 5px;
+    height: 30px;
+}
+
+.result {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#resultado, .total {
+    background-color: #e74c3c;
+}
+
+
+.escolha {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0px;
+    margin-top: 20px;
+}
